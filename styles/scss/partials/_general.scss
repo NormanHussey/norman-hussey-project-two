@@ -1,0 +1,61 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $fontCabin;
+    font-size: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: $fontOswald;
+    text-transform: uppercase;
+}
+
+ul {
+    padding: 0;
+    li {
+        list-style-type: none;
+        a {
+            color: $colourBlack;
+            text-decoration: none;
+        }
+    }
+}
+
+img {
+    width: 100%;
+    // height: auto;
+    display: block;
+}
+
+p {
+    line-height: 1.5;
+}
+
+button {
+    background-color: $colourAccent;
+    color: $colourBlack;
+    border-style: none;
+    text-transform: uppercase;
+    font-family: $fontOswald;
+    padding: 15px 40px;
+
+    &:hover,
+    &:focus {
+        background-color: $colourPrimaryLight;
+        color: $colourAccent;
+    }
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 80%;
+    margin: 0 auto;
+}
