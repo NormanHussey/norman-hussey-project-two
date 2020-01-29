@@ -29,6 +29,11 @@ header {
                 color: white;
             }
         }
+        
+        .current {
+            color: white;
+        }
+
     }
 }
 
@@ -38,7 +43,7 @@ header {
     justify-content: space-between;
     .imgContainer {
         flex-basis: 42%;
-        transform: translateY(5%);
+        transform: translateY(10%);
         background-color: white;
         img {
             object-position: 20px 20px;
