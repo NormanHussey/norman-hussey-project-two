@@ -298,9 +298,11 @@ ul li {
   list-style-type: none;
 }
 
-ul li a {
+a {
   color: #171717;
   text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 img {
@@ -319,6 +321,8 @@ button {
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   padding: 15px 40px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 button:hover, button:focus {
@@ -330,6 +334,59 @@ button:hover, button:focus {
   max-width: 1280px;
   width: 80%;
   margin: 0 auto;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+form > * {
+  border: none;
+}
+
+form > *:not(button) {
+  padding: 3rem;
+  margin-bottom: 2%;
+  font-family: "Cabin", sans-serif;
+}
+
+form *::-webkit-input-placeholder {
+  opacity: 100%;
+}
+
+form *:-ms-input-placeholder {
+  opacity: 100%;
+}
+
+form *::-ms-input-placeholder {
+  opacity: 100%;
+}
+
+form *::placeholder {
+  opacity: 100%;
+}
+
+form input {
+  color: #171717;
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+}
+
+form textarea {
+  resize: none;
+}
+
+form textarea,
+form button {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 footer {
@@ -659,7 +716,7 @@ h5 {
   font-size: 4rem;
 }
 
-.gallery .wrapper {
+.gallery ul {
   padding: 7.5% 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -669,7 +726,243 @@ h5 {
           justify-content: space-between;
 }
 
-.gallery .wrapper .imgContainer {
+.gallery ul .imgContainer {
   -ms-flex-preferred-size: 31%;
       flex-basis: 31%;
+}
+
+header.blogHeader {
+  height: 60vh;
+  background-image: url("../assets/blog-image-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+header.blogHeader h1 {
+  font-size: 8rem;
+  position: absolute;
+  bottom: -4rem;
+}
+
+.blogMain {
+  background-color: #F6F6F6;
+}
+
+.blogMain .wrapper {
+  padding: 7.5% 0 5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogMain article {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-preferred-size: 67%;
+      flex-basis: 67%;
+}
+
+.blogMain article > * {
+  margin-bottom: 5%;
+}
+
+.blogMain article > *:not(:last-of-type) {
+  border-bottom: 5px solid #227284;
+}
+
+.blogMain article .blogPost {
+  background-color: white;
+  padding: 5%;
+}
+
+.blogMain aside {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.blogMain aside > * {
+  padding: 10%;
+  margin-bottom: 5%;
+  background-color: white;
+}
+
+.blogMain aside .contentContainer {
+  margin-top: 10%;
+}
+
+.blogMain h3 {
+  font-size: 3.5rem;
+}
+
+.blogMain h4 {
+  font-size: 2.5rem;
+}
+
+.blogMain a {
+  color: #227284;
+  font-weight: 700;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.blogMain a:hover, .blogMain a:focus {
+  color: #F38D8D;
+}
+
+.blogMain .recentPosts ul {
+  all: revert;
+}
+
+.blogMain .recentPosts ul li {
+  all: revert;
+  line-height: 1.5;
+}
+
+.blogMain .recentPosts a {
+  font-weight: 400;
+  color: #171717;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.blogMain .recentPosts a:hover, .blogMain .recentPosts a:focus {
+  color: #F38D8D;
+}
+
+.comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.comments .comment {
+  padding: 5%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.comments .comment:not(:last-child) {
+  margin-bottom: 5%;
+}
+
+.comments .comment p {
+  margin: 0;
+}
+
+.comments .comment .imgContainer {
+  -ms-flex-preferred-size: 12.5%;
+      flex-basis: 12.5%;
+}
+
+.comments .comment .contentContainer {
+  -ms-flex-preferred-size: 85%;
+      flex-basis: 85%;
+}
+
+.commentForm {
+  border-bottom: none;
+}
+
+header.contactHeader {
+  height: 60vh;
+  background-image: url("../assets/contact-image-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+header.contactHeader h1 {
+  font-size: 8rem;
+  position: absolute;
+  bottom: -4rem;
+}
+
+.contactMain {
+  background-color: #F6F6F6;
+}
+
+.contactMain .wrapper {
+  padding: 5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contactInfo {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  background-color: white;
+  padding: 2.5%;
+}
+
+.contactInfo ul {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactInfo li {
+  margin-right: 40px;
+}
+
+.contactInfo a {
+  font-size: 3rem;
+  color: #227284;
+}
+
+.contactInfo a:hover, .contactInfo a:focus {
+  color: #F38D8D;
+}
+
+.contactInfo p a {
+  font-size: 2.5rem;
+  font-family: "Oswald", sans-serif;
+  color: #171717;
+}
+
+.contactInfo p a:hover, .contactInfo p a:focus {
+  color: #F38D8D;
+}
+
+.contactInfo p:not(:first-of-type) {
+  margin: 0;
+}
+
+.contactInfo address p {
+  margin: 0;
+  font-style: normal;
+}
+
+.contactForm {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
 }

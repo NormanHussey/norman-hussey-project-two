@@ -1,0 +1,118 @@
+header.blogHeader {
+    @include subPageHeader ('../assets/blog-image-1.jpg');
+}
+
+.blogMain {
+    background-color: $colourOffWhite;
+
+    .wrapper {
+        padding: 7.5% 0 5% 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    article {
+        order: 1;
+        flex-basis: 67%;
+
+        > * {
+            margin-bottom: 5%;
+            &:not(:last-of-type) {
+                border-bottom: 5px solid $colourPrimaryDark;
+            }
+        }
+
+        .blogPost {
+            background-color: white;
+            padding: 5%;
+        }
+    }
+
+    aside {
+        order: 0;
+        flex-basis: 30%;
+        align-self: flex-start;
+
+        > * {
+            padding: 10%;
+            margin-bottom: 5%;
+            background-color: white;
+        }
+
+        .contentContainer {
+            margin-top: 10%;
+        }
+
+    }
+
+    h3 {
+        font-size: 3.5rem;
+    }
+
+    h4 {
+        font-size: 2.5rem;
+    }
+
+    a {
+        color: $colourPrimaryDark;
+        font-weight: 700;
+        transition: all 0.3s;
+        &:hover,
+        &:focus {
+            color: $colourAccent;
+        }
+    }
+
+    .recentPosts {
+        ul {
+            all: revert;
+            li {
+                all: revert;
+                line-height: 1.5;
+            }
+        }
+
+        a {
+            font-weight: 400;
+            color: $colourBlack;
+            transition: all 0.3s;
+            &:hover,
+            &:focus {
+                color: $colourAccent;
+            }
+        }
+    }
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .comment {
+        padding: 5%;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        &:not(:last-child) {
+            margin-bottom: 5%;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .imgContainer {
+            flex-basis: 12.5%;
+        }
+
+        .contentContainer {
+            flex-basis: 85%;
+        }
+    }
+}
+
+.commentForm {
+    border-bottom: none;
+
+}

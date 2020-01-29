@@ -23,11 +23,13 @@ ul {
     padding: 0;
     li {
         list-style-type: none;
-        a {
-            color: $colourBlack;
-            text-decoration: none;
-        }
     }
+}
+
+a {
+    color: $colourBlack;
+    text-decoration: none;
+    transition: all 0.3s;
 }
 
 img {
@@ -46,6 +48,7 @@ button {
     text-transform: uppercase;
     font-family: $fontOswald;
     padding: 15px 40px;
+    transition: all 0.3s;
 
     &:hover,
     &:focus {
@@ -58,6 +61,39 @@ button {
     max-width: 1280px;
     width: 80%;
     margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    > * {
+        border: none;
+        &:not(button) {
+            padding: 3rem;
+            margin-bottom: 2%;
+            font-family: $fontCabin;
+        }
+    }
+
+    *::placeholder {
+        opacity: 100%;
+    }
+
+    input {
+        color: $colourBlack;
+        flex-basis: 49%;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    textarea,
+    button {
+        flex-basis: 100%;
+    }
+
 }
 
 footer {

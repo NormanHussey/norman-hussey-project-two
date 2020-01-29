@@ -5,30 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src='https://kit.fontawesome.com/860f0cd7f8.js'></script>
-    <link href="https://fonts.googleapis.com/css?family=Cabin|Oswald:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,700|Oswald:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Harper's Blog</title>
 </head>
 <body>
 
-    <header>
+    <header class="blogHeader">
+        <nav>
+            <ul>
+                <li><a href="./index.html#home">Home</a></li>
+                <li><a href="./index.html#about">About</a></li>
+                <li><h2 class="logo">Harper</h2></li>
+                <li><a href="./blog.html" class="current">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
         <div class="wrapper">
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><h2 class="logo">Harper</h2></li>
-                    <li><a href="./blog.html" class="current">Blog</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-            </nav>
             <div class="headerContent">
                 <h1>Blog</h1>
             </div>
         </div>
     </header>
 
-    <main>
+    <main class="blogMain">
         <div class="wrapper">
             <article>
                 <div class="blogPost">
@@ -44,7 +44,7 @@
                 <div class="comments">
                     <div class="comment">
                         <div class="imgContainer">
-                            <img src="./assets/blog-image-3.jpg" alt="">
+                            <img src="./assets/blog-image-3.jpg" alt="Maggie's Avatar Photo">
                         </div>
                         <div class="contentContainer">
                             <p><time datetime="2018-10-09">Tuesday October 9th, 2018</time> by Maggie</p>
@@ -53,7 +53,7 @@
                     </div>
                     <div class="comment">
                         <div class="imgContainer">
-                            <img src="./assets/blog-image-4.jpg" alt="">
+                            <img src="./assets/blog-image-4.jpg" alt="Daisy's Avatar Photo">
                         </div>
                         <div class="contentContainer">
                             <p><time datetime="2018-10-10">Wednesday October 10th, 2018</time> by Daisy</p>
@@ -66,8 +66,8 @@
                         <label for="name" class="sr-only">Name</label>
                         <input type="text" name="name" id="name" placeholder="Name">
                         <label for="email" class="sr-only">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Email">
-                        <label for="comment">Enter your comment text</label>
+                        <input type="email" name="email" id="email" placeholder="Email address">
+                        <label for="comment" class="sr-only">Enter your comment text</label>
                         <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
                         <button class="button">Post Comment</button>
                     </form>
@@ -77,11 +77,11 @@
             <aside>
                 <div class="aboutCard">
                     <div class="imgContainer">
-                        <img src="./assets/blog-image-2.jpg" alt="">
+                        <img src="./assets/blog-image-2.jpg" alt="Harper laying down on her grey faux fur rug looking thoughtfully up at her fingernails. She is wearing her favourite pink faux fur coat over a sleek summer dress.">
                     </div>
                     <div class="contentContainer">
                         <h4>About Harper</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sint nihil eius. <a href="#about">Find Out More</a></p>
+                        <p>Humblebrag art party iceland, gluten-free, you probably haven't heard of it. <a href="./index.html#about">Find out more</a></p>
                     </div>
                 </div>
                 <div class="recentPosts">
@@ -89,8 +89,8 @@
                     <ul>
                         <li><a href="#">Pickled aesthetic fashion axe</a></li>
                         <li><a href="#">Paleo kale chips gastropub</a></li>
-                        <li><a href="#">Bushwick cardigan farm-to-table</a></li>
-                        <li><a href="#">Williamsburg pitchfork selfies</a></li>
+                        <li><a href="#">Cardigan farm-to-table</a></li>
+                        <li><a href="#">Williamsburg selfies</a></li>
                     </ul>
                 </div>
             </aside>
