@@ -70,6 +70,19 @@ header {
         h1 {
             order: 0;
             font-size: 15rem;
+            position: relative;
+
+            &::after {
+                content: '';
+                background-image: url('../assets/circle-text.png');
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: -25%;
+                left: 75%;
+                z-index: 1;
+            }
         }
     }
 

@@ -506,6 +506,19 @@ header nav .current {
       -ms-flex-order: 0;
           order: 0;
   font-size: 15rem;
+  position: relative;
+}
+
+.headerContent .contentContainer h1::after {
+  content: '';
+  background-image: url("../assets/circle-text.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -25%;
+  left: 75%;
+  z-index: 1;
 }
 
 h3 {
@@ -613,6 +626,7 @@ h5 {
 .photos .card .imgContainer {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  height: 50%;
   background-color: #68B0C1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -627,10 +641,8 @@ h5 {
 }
 
 .photos .card .imgContainer img {
-  -o-object-fit: cover;
-     object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: auto;
   -webkit-transform-origin: top right;
           transform-origin: top right;
   -webkit-transform: scaleX(0.5) translate(-20px, -20px);
@@ -638,7 +650,7 @@ h5 {
 }
 
 .photos .card .contentContainer {
-  padding: 7.5% 0 7.5% 7.5%;
+  padding: 5% 0 5% 5%;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   display: -webkit-box;
@@ -672,7 +684,7 @@ h5 {
 }
 
 .photos .card:last-of-type .contentContainer {
-  padding: 7.5% 7.5% 7.5% 0;
+  padding: 5% 5% 5% 0;
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
           order: 0;
