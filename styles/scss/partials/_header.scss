@@ -4,6 +4,11 @@ header {
     text-transform: uppercase;
     height: 100vh;
 
+    @include mq-mobile-XL() {
+        padding-top: 5vh;
+        height: 95vh;
+    }
+
     nav {
         background-color: $colourPrimaryLight;
         display: flex;
@@ -14,9 +19,40 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            @include mq-mobile-XL() {
+                flex-direction: column;
+                position: fixed;
+                top: -100%;
+                left: 0;
+                width: 100%;
+                z-index: 20;
+                background-color: rgba(0, 0, 0, 0.9);
+                float: none;
+                height: 0;
+                margin: 0;
+                padding: 25% 0;
+                overflow: hidden;
+                transition: all 0.3s;
+            }
+
             li {
                 margin: 0 30px;
+
+                &:nth-child(3) {
+                    @include mq-mobile-XL() {
+                        display: none;
+                    }
+                }
             }
+
+            a {
+                @include mq-mobile-XL() {
+                    font-size: 4rem;
+                    color: white;
+                }
+            }
+
         }
 
         h2 {
@@ -27,13 +63,30 @@ header {
             &:hover,
             &:focus {
                 color: white;
+                @include mq-mobile-XL() {
+                    color: $colourAccent;
+                }
             }
         }
         
         .current {
             color: white;
+            @include mq-mobile-XL() {
+                color: $colourAccent;
+            }
         }
 
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        @include mq-tablet-large() {
+            align-items: stretch;
+        }
     }
 }
 
@@ -41,10 +94,23 @@ header {
 
     display: flex;
     justify-content: space-between;
+
+    @include mq-tablet-large() {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .imgContainer {
         flex-basis: 42%;
         transform: translateY(10%);
         background-color: white;
+
+        @include mq-tablet-large() {
+            flex-basis: auto;
+            width: 50%;
+        }
+
         img {
             object-position: 20px 20px;
             padding: 0 20px 20px 0;
@@ -76,14 +142,45 @@ header {
                 content: '';
                 background-image: url('../assets/circle-text.png');
                 background-repeat: no-repeat;
+                background-size: contain;
                 width: 100%;
                 height: 100%;
                 position: absolute;
                 top: -25%;
                 left: 75%;
                 z-index: 1;
+
+            }
+
+            @include mq-mobile-XL() {
+                font-size: 12rem;
             }
         }
     }
 
+}
+
+button.hamburger {
+    display: none;
+    background-color: transparent;
+    padding: 0;
+
+    @include mq-mobile-XL() {
+        color: $colourAccent;
+        font-size: 4.5rem;
+        background-color: transparent;
+        border: none;
+        display: block;
+        position: fixed;
+        top: 1%;
+        right: 5%;
+        z-index: 20;
+        text-shadow: 1px 1px $colourBlack;
+    }
+
+}
+
+.open {
+    top: 0;
+    height: 100%;
 }

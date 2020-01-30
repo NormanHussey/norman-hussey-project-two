@@ -16,12 +16,25 @@ h5 {
         display: flex;
         justify-content: flex-end;
 
+        @include mq-tablet-large() {
+            justify-content: center;
+        }
+
     }
 
     .contentContainer {
         flex-basis: 50%;
         display: flex;
         flex-direction: column;
+
+        @include mq-tablet-large() {
+            text-align: center;
+            flex-basis: auto;
+
+            button {
+                align-self: center;
+            }
+        }
     }
 
 }
@@ -43,6 +56,10 @@ h5 {
         margin: 0;
         display: flex;
         flex-wrap: wrap;
+
+        @include mq-tablet-small() {
+            flex-direction: column;
+        }
 
         li {
             flex-basis: 50%;
@@ -83,6 +100,12 @@ h5 {
         width: 100%;
         display: flex;
         justify-content: space-between;
+
+        @include mq-tablet-large() {
+            flex-direction: column;
+            text-align: center;
+        }
+
         .imgContainer {
             flex-basis: 50%;
             height: 50%;
@@ -91,11 +114,21 @@ h5 {
             align-items: flex-start;
             transform-origin: top right;
             transform: scaleX(2) translate(10px, -20px);
+
+            @include mq-tablet-large() {
+                transform: none;
+            }
+
             img {
                 width: 100%;
                 height: auto;
                 transform-origin: top right;
-                transform: scaleX(0.5) translate(-20px, -20px) ;
+                transform: scaleX(0.5) translate(-20px, -20px);
+
+                @include mq-tablet-large() {
+                    transform: none;
+                    box-shadow: -20px 20px $colourPrimary;
+                }
             }
         }
 
@@ -105,6 +138,12 @@ h5 {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            @include mq-tablet-large() {
+                // align-items: center;
+                button {
+                    align-self: center;
+                }
+            }
         }
 
         &:last-of-type {
@@ -113,16 +152,32 @@ h5 {
                 order: 1;
                 transform-origin: top left;
                 transform: scaleX(2) translate(10px, 40px);
+
+                @include mq-tablet-large() {
+                    order: 0;
+                    transform: none;
+                }
+
                 img {
                     transform-origin: top left;
                     transform: scaleX(0.5) translate(-20px, -20px);
+
+                    @include mq-tablet-large() {
+                        transform: none;
+                        box-shadow: 20px 20px $colourPrimaryLight;
+                    }
                 }
+
             }
             .contentContainer {
                 padding: 5% 5% 5% 0;
                 order: 0;
                 button {
                     align-self: flex-end;
+
+                    @include mq-tablet-large() {
+                        align-self: center;
+                    }
                 }
 
             }
@@ -139,8 +194,19 @@ h5 {
         display: flex;
         justify-content: space-between;
 
+        @include mq-tablet-large() {
+            flex-direction: column;
+            align-items: center;
+        }
+
         .imgContainer {
             flex-basis: 25%;
+
+            @include mq-tablet-large() {
+                flex-basis: auto;
+                width: 50%;
+            }
+
             img {
                 box-shadow: 20px 20px $colourPrimaryDark;
                 
@@ -149,6 +215,12 @@ h5 {
 
         .contentContainer {
             flex-basis: 65%;
+
+            @include mq-tablet-large() {
+                flex-basis: auto;
+                margin-top: 5%;
+                text-align: center;
+            }
         }
 
         h5 {
@@ -163,8 +235,21 @@ h5 {
         padding: 7.5% 0;
         display: flex;
         justify-content: space-between;
+
+        @include mq-tablet-small() {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
         .imgContainer {
             flex-basis: 31%;
+
+            @include mq-tablet-small() {
+                flex-basis: auto;
+                width: 75%;
+                margin: 5% 0;
+            }
         }
     }
 }

@@ -10,3 +10,22 @@
         bottom: -4rem;
     }
 }
+
+@mixin mq-tablet-large() {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+
+@mixin mq-tablet-small() {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mq-mobile-XL() {
+    @media (max-width: 660px) {
+        @content;
+    }
+}
