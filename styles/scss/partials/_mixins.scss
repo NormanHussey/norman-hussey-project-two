@@ -29,3 +29,15 @@
         @content;
     }
 }
+
+@mixin mq-mobile-medium() {
+    @media (max-width: 450px) {
+        @content;
+    }
+}
+
+@mixin mq-mobile-small() {
+    @media (max-width: 360px) {
+        @content;
+    }
+}

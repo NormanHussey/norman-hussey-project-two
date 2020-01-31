@@ -139,10 +139,13 @@ h5 {
             flex-direction: column;
             justify-content: center;
             @include mq-tablet-large() {
-                // align-items: center;
                 button {
                     align-self: center;
                 }
+            }
+
+            @include mq-tablet-small() {
+                margin: 5% 0;
             }
         }
 
@@ -220,6 +223,10 @@ h5 {
                 flex-basis: auto;
                 margin-top: 5%;
                 text-align: center;
+            }
+
+            @include mq-mobile-XL() {
+                margin: 10% 0;
             }
         }
 

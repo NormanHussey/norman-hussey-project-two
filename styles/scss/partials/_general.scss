@@ -6,6 +6,10 @@ body {
     font-family: $fontCabin;
     font-size: 2rem;
     overflow-x: hidden;
+
+    @include mq-mobile-small() {
+        font-size: 1.75rem;
+    }
 }
 
 h1,
