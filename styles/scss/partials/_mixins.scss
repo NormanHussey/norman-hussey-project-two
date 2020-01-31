@@ -1,11 +1,11 @@
 @mixin mq-desktop-small() {
-    @media (max-width: 1140px) {
+    @media (max-width: 1170px) {
         @content;
     }
 }
 
 @mixin mq-tablet-large() {
-    @media (max-width: 1024px) {
+    @media (max-width: 1048px) {
         @content;
     }
 }
