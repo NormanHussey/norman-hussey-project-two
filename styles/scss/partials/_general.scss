@@ -66,40 +66,8 @@ button {
     width: 80%;
     margin: 0 auto;
 
-    @include mq-mobile-XL() {
+    @include mq-desktop-small() {
         width: 90%;
-    }
-}
-
-form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    > * {
-        border: none;
-        &:not(button) {
-            padding: 3rem;
-            margin-bottom: 2%;
-            font-family: $fontCabin;
-        }
-    }
-
-    *::placeholder {
-        opacity: 100%;
-    }
-
-    input {
-        color: $colourBlack;
-        flex-basis: 49%;
-    }
-
-    textarea {
-        resize: none;
-    }
-
-    textarea,
-    button {
-        flex-basis: 100%;
     }
 
 }

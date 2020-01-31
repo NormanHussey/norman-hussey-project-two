@@ -1,17 +1,6 @@
-@mixin subPageHeader($imageUrl) {
-    height: 60vh;
-    background-image: url($imageUrl);
-    background-size: cover;
-    background-repeat: no-repeat;
-    .wrapper {
-        position: relative;
-    }
-
-    h1 {
-        font-size: 8rem;
-        position: absolute;
-        bottom: 4rem;
-        left: 0;
+@mixin mq-desktop-small() {
+    @media (max-width: 1140px) {
+        @content;
     }
 }
 
@@ -43,5 +32,28 @@
 @mixin mq-mobile-small() {
     @media (max-width: 360px) {
         @content;
+    }
+}
+
+@mixin subPageHeader($imageUrl) {
+    height: 60vh;
+    background-image: url($imageUrl);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    @include mq-mobile-XL() {
+        background-position: center;
+        height: 35vh;
+    }
+
+    .wrapper {
+        position: relative;
+    }
+
+    h1 {
+        font-size: 8rem;
+        position: absolute;
+        bottom: 4rem;
+        left: 0;
     }
 }
