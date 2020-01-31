@@ -3,11 +3,15 @@
     background-image: url($imageUrl);
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
+    .wrapper {
+        position: relative;
+    }
+
     h1 {
         font-size: 8rem;
         position: absolute;
-        bottom: -4rem;
+        bottom: 4rem;
+        left: 0;
     }
 }
 

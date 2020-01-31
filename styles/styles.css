@@ -1065,13 +1065,17 @@ header.blogHeader {
   background-image: url("../assets/blog-image-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+header.blogHeader .wrapper {
   position: relative;
 }
 
 header.blogHeader h1 {
   font-size: 8rem;
   position: absolute;
-  bottom: -4rem;
+  bottom: 4rem;
+  left: 0;
 }
 
 .blogMain {
@@ -1219,13 +1223,17 @@ header.contactHeader {
   background-image: url("../assets/contact-image-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+header.contactHeader .wrapper {
   position: relative;
 }
 
 header.contactHeader h1 {
   font-size: 8rem;
   position: absolute;
-  bottom: -4rem;
+  bottom: 4rem;
+  left: 0;
 }
 
 .contactMain {
