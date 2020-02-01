@@ -31,7 +31,7 @@ ul {
 }
 
 a {
-    color: $colourBlack;
+    color: $colourDark;
     text-decoration: none;
     transition: all 0.3s;
 }
@@ -48,7 +48,7 @@ p {
 button {
     cursor: pointer;
     background-color: $colourAccent;
-    color: $colourBlack;
+    color: $colourDark;
     border-style: none;
     text-transform: uppercase;
     font-family: $fontOswald;
@@ -91,7 +91,7 @@ form {
     }
 
     input {
-        color: $colourBlack;
+        color: $colourDark;
         // flex-basis: 49%;
         width: 49%;
 
@@ -113,8 +113,8 @@ form {
 }
 
 footer {
-    background-color: $colourBlack;
-    color: $colourOffWhite;
+    background-color: $colourDark;
+    color: $colourLight;
     text-align: center;
     p {
         margin: 0;

@@ -9,7 +9,7 @@ header.contactHeader {
 }
 
 .contactMain {
-    background-color: $colourOffWhite;
+    background-color: $colourLight;
 
     .wrapper {
         padding: 5% 0;
@@ -67,7 +67,7 @@ header.contactHeader {
     p a {
         font-size: 2.5rem;
         font-family: $fontOswald;
-        color: $colourBlack;
+        color: $colourDark;
         &:hover,
         &:focus {
             color: $colourAccent;

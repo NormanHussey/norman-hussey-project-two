@@ -3,7 +3,7 @@ header.blogHeader {
 }
 
 .blogMain {
-    background-color: $colourOffWhite;
+    background-color: $colourLight;
 
     .wrapper {
         padding: 7.5% 0 5% 0;
@@ -116,7 +116,7 @@ header.blogHeader {
 
         a {
             font-weight: 400;
-            color: $colourBlack;
+            color: $colourDark;
             transition: all 0.3s;
             &:hover,
             &:focus {
