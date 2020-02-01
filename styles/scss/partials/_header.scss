@@ -111,7 +111,7 @@ header {
             width: 50%;
         }
 
-        @include mq-mobile-medium() {
+        @include mq-mobile-large() {
             width: 60%;
         }
 
@@ -160,7 +160,7 @@ header {
                 font-size: 10rem;
             }
 
-            @include mq-mobile-medium() {
+            @include mq-mobile-large() {
                 font-size: 8rem;
             }
 

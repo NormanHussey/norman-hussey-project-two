@@ -17,7 +17,7 @@
     }
 }
 
-@mixin mq-mobile-medium() {
+@mixin mq-mobile-large() {
     @media (max-width: 450px) {
         @content;
     }

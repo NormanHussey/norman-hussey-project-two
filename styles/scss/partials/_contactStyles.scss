@@ -1,7 +1,7 @@
 header.contactHeader {
     @include subPageHeader('../assets/contact-image-1.jpg');
 
-    @include mq-mobile-medium() {
+    @include mq-mobile-large() {
         h1 {
             font-size: 5.5rem;
         }
@@ -22,7 +22,7 @@ header.contactHeader {
             align-items: center;
         }
 
-        @include mq-mobile-medium() {
+        @include mq-mobile-large() {
             align-items: stretch;
         }
     }

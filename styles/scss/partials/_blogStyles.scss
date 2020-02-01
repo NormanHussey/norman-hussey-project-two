@@ -100,7 +100,7 @@ header.blogHeader {
             width: 75%;
         }
 
-        @include mq-mobile-medium() {
+        @include mq-mobile-large() {
             width: 100%;
         }
     }
@@ -133,7 +133,7 @@ header.blogHeader {
             width: 75%;
         }
 
-        @include mq-mobile-medium() {
+        @include mq-mobile-large() {
             width: 100%;
         }
     }
