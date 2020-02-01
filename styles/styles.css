@@ -578,6 +578,12 @@ header .wrapper {
   .headerContent .imgContainer {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
+    width: 25%;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerContent .imgContainer {
     width: 50%;
   }
 }
@@ -642,6 +648,12 @@ header .wrapper {
   top: -25%;
   left: 75%;
   z-index: 1;
+}
+
+@media (max-width: 1048px) {
+  .headerContent .contentContainer h1 {
+    font-size: 11rem;
+  }
 }
 
 @media (max-width: 768px) {

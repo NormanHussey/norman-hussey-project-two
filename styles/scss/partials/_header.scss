@@ -108,6 +108,10 @@ header {
 
         @include mq-desktop-small() {
             flex-basis: auto;
+            width: 25%;
+        }
+
+        @include mq-tablet() {
             width: 50%;
         }
 
@@ -154,6 +158,10 @@ header {
                 left: 75%;
                 z-index: 1;
 
+            }
+
+            @include mq-desktop-small() {
+                font-size: 11rem;
             }
 
             @include mq-tablet() {
