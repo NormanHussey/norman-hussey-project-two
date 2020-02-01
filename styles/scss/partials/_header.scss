@@ -4,7 +4,7 @@ header {
     text-transform: uppercase;
     height: 100vh;
 
-    @include mq-tablet-small() {
+    @include mq-tablet() {
         padding-top: 5vh;
         height: 95vh;
     }
@@ -20,7 +20,7 @@ header {
             justify-content: space-between;
             align-items: center;
 
-            @include mq-tablet-small() {
+            @include mq-tablet() {
                 flex-direction: column;
                 position: fixed;
                 top: -100%;
@@ -40,14 +40,14 @@ header {
                 margin: 0 30px;
 
                 &:nth-child(3) {
-                    @include mq-tablet-small() {
+                    @include mq-tablet() {
                         display: none;
                     }
                 }
             }
 
             a {
-                @include mq-tablet-small() {
+                @include mq-tablet() {
                     font-size: 4rem;
                     color: white;
                 }
@@ -63,7 +63,7 @@ header {
             &:hover,
             &:focus {
                 color: white;
-                @include mq-tablet-small() {
+                @include mq-tablet() {
                     color: $colourAccent;
                 }
             }
@@ -71,7 +71,7 @@ header {
         
         .current {
             color: white;
-            @include mq-tablet-small() {
+            @include mq-tablet() {
                 color: $colourAccent;
             }
         }
@@ -84,7 +84,7 @@ header {
         align-items: center;
         height: 100%;
 
-        @include mq-tablet-large() {
+        @include mq-desktop-small() {
             align-items: stretch;
         }
     }
@@ -95,7 +95,7 @@ header {
     display: flex;
     justify-content: space-between;
 
-    @include mq-tablet-large() {
+    @include mq-desktop-small() {
         justify-content: center;
         flex-direction: column;
         align-items: center;
@@ -106,7 +106,7 @@ header {
         transform: translateY(10%);
         background-color: white;
 
-        @include mq-tablet-large() {
+        @include mq-desktop-small() {
             flex-basis: auto;
             width: 50%;
         }
@@ -156,7 +156,7 @@ header {
 
             }
 
-            @include mq-tablet-small() {
+            @include mq-tablet() {
                 font-size: 10rem;
             }
 
@@ -177,7 +177,7 @@ button.hamburger {
     background-color: transparent;
     padding: 0;
 
-    @include mq-tablet-small() {
+    @include mq-tablet() {
         color: $colourAccent;
         font-size: 4.5rem;
         background-color: transparent;

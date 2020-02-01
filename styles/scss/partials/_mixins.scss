@@ -1,11 +1,11 @@
-@mixin mq-tablet-large() {
+@mixin mq-desktop-small() {
     @media (max-width: 1048px) {
         @content;
     }
 }
 
 
-@mixin mq-tablet-small() {
+@mixin mq-tablet() {
     @media (max-width: 768px) {
         @content;
     }
@@ -29,7 +29,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     
-    @include mq-tablet-small() {
+    @include mq-tablet() {
         background-position: center;
         height: 35vh;
     }

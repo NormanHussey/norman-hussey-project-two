@@ -67,7 +67,7 @@ button {
     width: 80%;
     margin: 0 auto;
 
-    @include mq-tablet-large() {
+    @include mq-desktop-small() {
         width: 90%;
     }
 
@@ -95,7 +95,7 @@ form {
         // flex-basis: 49%;
         width: 49%;
 
-        @include mq-tablet-small() {
+        @include mq-tablet() {
             // flex-basis: 100%;
             width: 100%;
         }
