@@ -35,15 +35,11 @@ header.contactHeader {
 
     @include mq-tablet-small() {
         margin: 5% 0;
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-    }
-
-    @include mq-mobile-XL() {
-        width: 100%;
     }
 
     ul {

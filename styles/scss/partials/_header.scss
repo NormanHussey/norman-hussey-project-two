@@ -4,7 +4,7 @@ header {
     text-transform: uppercase;
     height: 100vh;
 
-    @include mq-mobile-XL() {
+    @include mq-tablet-small() {
         padding-top: 5vh;
         height: 95vh;
     }
@@ -20,7 +20,7 @@ header {
             justify-content: space-between;
             align-items: center;
 
-            @include mq-mobile-XL() {
+            @include mq-tablet-small() {
                 flex-direction: column;
                 position: fixed;
                 top: -100%;
@@ -40,14 +40,14 @@ header {
                 margin: 0 30px;
 
                 &:nth-child(3) {
-                    @include mq-mobile-XL() {
+                    @include mq-tablet-small() {
                         display: none;
                     }
                 }
             }
 
             a {
-                @include mq-mobile-XL() {
+                @include mq-tablet-small() {
                     font-size: 4rem;
                     color: white;
                 }
@@ -63,7 +63,7 @@ header {
             &:hover,
             &:focus {
                 color: white;
-                @include mq-mobile-XL() {
+                @include mq-tablet-small() {
                     color: $colourAccent;
                 }
             }
@@ -71,7 +71,7 @@ header {
         
         .current {
             color: white;
-            @include mq-mobile-XL() {
+            @include mq-tablet-small() {
                 color: $colourAccent;
             }
         }
@@ -156,7 +156,7 @@ header {
 
             }
 
-            @include mq-mobile-XL() {
+            @include mq-tablet-small() {
                 font-size: 10rem;
             }
 
@@ -177,7 +177,7 @@ button.hamburger {
     background-color: transparent;
     padding: 0;
 
-    @include mq-mobile-XL() {
+    @include mq-tablet-small() {
         color: $colourAccent;
         font-size: 4.5rem;
         background-color: transparent;

@@ -427,7 +427,7 @@ header {
   height: 100vh;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 768px) {
   header {
     padding-top: 5vh;
     height: 95vh;
@@ -460,7 +460,7 @@ header nav ul {
           align-items: center;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 768px) {
   header nav ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -486,13 +486,13 @@ header nav ul li {
   margin: 0 30px;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 768px) {
   header nav ul li:nth-child(3) {
     display: none;
   }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 768px) {
   header nav ul a {
     font-size: 4rem;
     color: white;
@@ -507,7 +507,7 @@ header nav a:hover, header nav a:focus {
   color: white;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 768px) {
   header nav a:hover, header nav a:focus {
     color: #F38D8D;
   }
@@ -517,7 +517,7 @@ header nav .current {
   color: white;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 768px) {
   header nav .current {
     color: #F38D8D;
   }
@@ -646,7 +646,7 @@ header .wrapper {
   z-index: 1;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 768px) {
   .headerContent .contentContainer h1 {
     font-size: 10rem;
   }
@@ -670,7 +670,7 @@ button.hamburger {
   padding: 0;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 768px) {
   button.hamburger {
     color: #F38D8D;
     font-size: 4.5rem;
@@ -1019,7 +1019,7 @@ h5 {
   }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 768px) {
   .journey .card .contentContainer {
     margin: 10% 0;
   }
@@ -1075,7 +1075,7 @@ header.blogHeader {
   background-repeat: no-repeat;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 768px) {
   header.blogHeader {
     background-position: center;
     height: 35vh;
@@ -1326,11 +1326,6 @@ header.blogHeader h1 {
   .comments .comment .imgContainer {
     margin: 0 5% 0 0;
     float: left;
-  }
-}
-
-@media (max-width: 660px) {
-  .comments .comment .imgContainer {
     width: 25%;
   }
 }
@@ -1357,7 +1352,7 @@ header.contactHeader {
   background-repeat: no-repeat;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 768px) {
   header.contactHeader {
     background-position: center;
     height: 35vh;
@@ -1427,7 +1422,7 @@ header.contactHeader h1 {
 @media (max-width: 768px) {
   .contactInfo {
     margin: 5% 0;
-    width: 50%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1439,12 +1434,6 @@ header.contactHeader h1 {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-  }
-}
-
-@media (max-width: 660px) {
-  .contactInfo {
-    width: 100%;
   }
 }
 

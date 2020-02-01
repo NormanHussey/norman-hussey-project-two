@@ -17,12 +17,6 @@
     }
 }
 
-@mixin mq-mobile-XL() {
-    @media (max-width: 660px) {
-        @content;
-    }
-}
-
 @mixin mq-mobile-medium() {
     @media (max-width: 450px) {
         @content;
@@ -41,7 +35,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     
-    @include mq-mobile-XL() {
+    @include mq-tablet-small() {
         background-position: center;
         height: 35vh;
     }

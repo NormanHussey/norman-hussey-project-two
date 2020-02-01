@@ -168,11 +168,9 @@ header.blogHeader {
             @include mq-tablet-small() {
                 margin: 0 5% 0 0;
                 float: left;
-            }
-
-            @include mq-mobile-XL() {
                 width: 25%;
             }
+
         }
 
         .contentContainer {

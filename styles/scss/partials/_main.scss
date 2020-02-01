@@ -225,7 +225,7 @@ h5 {
                 text-align: center;
             }
 
-            @include mq-mobile-XL() {
+            @include mq-tablet-small() {
                 margin: 10% 0;
             }
         }
