@@ -1,5 +1,11 @@
 header.contactHeader {
     @include subPageHeader('../assets/contact-image-1.jpg');
+
+    @include mq-mobile-medium() {
+        h1 {
+            font-size: 5.5rem;
+        }
+    }
 }
 
 .contactMain {
@@ -14,6 +20,10 @@ header.contactHeader {
         @include mq-tablet-small() {
             flex-direction: column;
             align-items: center;
+        }
+
+        @include mq-mobile-medium() {
+            align-items: stretch;
         }
     }
 }
@@ -30,6 +40,10 @@ header.contactHeader {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    @include mq-mobile-XL() {
+        width: 100%;
     }
 
     ul {
@@ -79,6 +93,10 @@ header.contactHeader {
 
 .contactForm {
     margin-left: 1.5%;
+
+    @include mq-tablet-small() {
+        margin: 0;
+    }
 
     form {
         input {

@@ -321,6 +321,7 @@ p {
 }
 
 button {
+  cursor: pointer;
   background-color: #F38D8D;
   color: #171717;
   border-style: none;
@@ -1374,6 +1375,12 @@ header.contactHeader h1 {
   left: 0;
 }
 
+@media (max-width: 450px) {
+  header.contactHeader h1 {
+    font-size: 5.5rem;
+  }
+}
+
 .contactMain {
   background-color: #F6F6F6;
 }
@@ -1403,6 +1410,14 @@ header.contactHeader h1 {
   }
 }
 
+@media (max-width: 450px) {
+  .contactMain .wrapper {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+}
+
 .contactInfo {
   background-color: white;
   padding: 2.5%;
@@ -1424,6 +1439,12 @@ header.contactHeader h1 {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+  }
+}
+
+@media (max-width: 660px) {
+  .contactInfo {
+    width: 100%;
   }
 }
 
@@ -1474,6 +1495,12 @@ header.contactHeader h1 {
 
 .contactForm {
   margin-left: 1.5%;
+}
+
+@media (max-width: 768px) {
+  .contactForm {
+    margin: 0;
+  }
 }
 
 @media (max-width: 1048px) {
