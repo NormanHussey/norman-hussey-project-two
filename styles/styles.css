@@ -1135,7 +1135,7 @@ header.blogHeader h1 {
   margin-bottom: 5%;
 }
 
-.blogMain article > *:not(:last-of-type) {
+.blogMain article > *:not(:last-child) {
   border-bottom: 5px solid #227284;
 }
 

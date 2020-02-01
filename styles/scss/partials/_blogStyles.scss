@@ -20,7 +20,7 @@ header.blogHeader {
 
         > * {
             margin-bottom: 5%;
-            &:not(:last-of-type) {
+            &:not(:last-child) {
                 border-bottom: 5px solid $colourPrimaryDark;
             }
         }

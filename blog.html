@@ -32,7 +32,7 @@
     <main class="blogMain">
         <div class="wrapper">
             <article>
-                <div class="blogPost">
+                <section class="blogPost">
                     <h3>My Favourite Travel Destinations</h3>
                     <p><time datetime="2018-10-08">Monday October 8th, 2018</time> by Harper</p>
                     <p>Leggings sriracha vape gluten-free, craft beer fanny pack locavore +1 keffiyeh neutra tacos gastropub hella post-ironic tilde. Kogi intelligentsia narwhal iceland chartreuse polaroid, cold-pressed beard messenger bag pinterest. Cray celiac williamsburg vape pop-up blue bottle banh mi mixtape. Lomo edison bulb kitsch butcher tacos keytar lyft schlitz fam brooklyn crucifix franzen pug. Paleo pabst sartorial intelligentsia, selvage marfa echo park distillery everyday carry photo booth beard mlkshk mustache pour-over snackwave. Echo park woke salvia, fam four loko food truck tumeric you probably haven't heard of them forage cloud bread flannel marfa. Knausgaard authentic kickstarter, tousled truffaut irony freegan leggings lo-fi.</p>
@@ -41,8 +41,8 @@
                     <p>Sartorial meh tumblr raclette fingerstache. Biodiesel cloud bread seitan brunch etsy prism trust fund semiotics flexitarian tilde polaroid swag keytar beard fashion axe. Glossier microdosing craft beer tilde portland. Pinterest unicorn swag quinoa subway tile asymmetrical.</p>
                     <p>Woke readymade banh mi schlitz meh kickstarter everyday carry before they sold out. Sriracha post-ironic affogato ugh chillwave 3 wolf moon williamsburg umami fanny pack paleo messenger bag hoodie twee. Whatever kombucha kogi four loko williamsburg, pickled brooklyn vice gochujang subway tile craft beer. Slow-carb master cleanse single-origin coffee coloring book fixie disrupt shabby chic banh mi cronut four loko plaid retro.</p>
                     <p>Snackwave waistcoat tilde vaporware yuccie kogi, freegan fam vinyl. Affogato poutine wayfarers austin four dollar toast iceland aesthetic 8-bit copper mug mixtape godard. Raclette 90's chia taxidermy fam intelligentsia vice. XOXO kickstarter pop-up intelligentsia jianbing. Before they sold out put a bird on it 8-bit, listicle craft beer heirloom knausgaard beard bicycle rights pork belly roof party. Mixtape fanny pack truffaut polaroid disrupt roof party fingerstache letterpress.</p>
-                </div>
-                <div class="comments">
+                </section>
+                <section class="comments">
                     <div class="comment clearfix">
                         <div class="imgContainer">
                             <img src="./assets/blog-image-3.jpg" alt="Maggie's Avatar Photo">
@@ -61,18 +61,18 @@
                             <p>Retro gentrify meggings chambray, cardigan dreamcatcher sustainable chia jianbing scenester ugh. Cronut af health goth everyday carry meggings blog. Distillery art party disrupt, actually pickled banh mi deep v vegan beard green juice keytar. Celiac seitan pour-over kogi blog flannel.</p>
                         </div>
                     </div>
-                </div>
-                <div class="commentForm">
+                </section>
+                <section class="commentForm">
                     <form action="#" method="post">
                         <label for="name" class="sr-only">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Name">
+                        <input type="text" name="name" id="name" placeholder="Name" required>
                         <label for="email" class="sr-only">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Email address">
+                        <input type="email" name="email" id="email" placeholder="Email address" required>
                         <label for="comment" class="sr-only">Enter your comment text</label>
-                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment" required></textarea>
                         <button class="button">Post Comment</button>
                     </form>
-                </div>
+                </section>
             </article>
     
             <aside>
@@ -95,7 +95,7 @@
                     </ul>
                 </div>
             </aside>
-        </div>
+        </sectiondiv>
     </main>
 
     <footer>
@@ -106,6 +106,7 @@
 
     <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
     <script src="./scripts/menuScript.js"></script>
+    <script src="./scripts/addCommentScript.js"></script>
     
 </body>
 </html>
