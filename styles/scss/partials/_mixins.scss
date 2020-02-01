@@ -1,3 +1,5 @@
+// Media Query Mixins
+
 @mixin mq-desktop-small() {
     @media (max-width: 1048px) {
         @content;
@@ -22,6 +24,8 @@
         @content;
     }
 }
+
+// End of Media Query Mixins
 
 @mixin subPageHeader($imageUrl) {
     height: 60vh;

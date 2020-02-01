@@ -62,17 +62,6 @@ button {
     }
 }
 
-.wrapper {
-    max-width: 1280px;
-    width: 80%;
-    margin: 0 auto;
-
-    @include mq-desktop-small() {
-        width: 90%;
-    }
-
-}
-
 form {
     display: flex;
     flex-wrap: wrap;
@@ -92,11 +81,9 @@ form {
 
     input {
         color: $colourDark;
-        // flex-basis: 49%;
         width: 49%;
 
         @include mq-tablet() {
-            // flex-basis: 100%;
             width: 100%;
         }
     }
@@ -120,5 +107,16 @@ footer {
         margin: 0;
         padding: 10px 0;
     }
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 80%;
+    margin: 0 auto;
+
+    @include mq-desktop-small() {
+        width: 90%;
+    }
+
 }
 
