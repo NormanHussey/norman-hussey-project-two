@@ -1,0 +1,53 @@
+@keyframes headerImgContainerAnim {
+    0% {
+        transform: translate(0, 200%);
+    }
+
+    100% {
+        transform: translate(0, 10%);
+    }
+}
+
+@keyframes headerImgAnim {
+    0%,
+    50% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-20px, -20px);
+    }
+}
+
+@keyframes headerH1Anim {
+    0% {
+        transform: translate(200%, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes headerH1AfterAnim {
+    0%,
+    50% {
+        opacity: 0%;
+        transform: rotate(90deg);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes headerNavAnim {
+    0% {
+        transform: translate(0, -200%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}

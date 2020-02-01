@@ -6,7 +6,6 @@ header {
 
     @include mq-tablet() {
         padding-top: 5vh;
-        height: 95vh;
     }
 
     nav {
@@ -17,7 +16,10 @@ header {
             @include flexBetween();
             align-items: center;
 
+            animation: headerNavAnim 1s ease 0s 1;
+
             @include mq-tablet() {
+                animation: none;
                 flex-direction: column;
                 position: fixed;
                 top: -100%;
@@ -98,6 +100,7 @@ header {
         flex-basis: 42%;
         transform: translateY(10%);
         background-color: white;
+        animation: headerImgContainerAnim 1s ease 0s 1;
 
         @include mq-desktop-small() {
             flex-basis: auto;
@@ -125,6 +128,7 @@ header {
             margin: -20px -20px;
             // Use translate to move the image up and to the left by another 20px to move it out of its container and thus creating the faux box-shadow effect
             transform: translate(-20px, -20px);
+            animation: headerImgAnim 1.5s ease 0s 1;
 
             // It might seem redundant to use negative margin to move the image part of the way and then translate to move it the rest of the way instead of just choosing one of them to move it the full 40px. However, using just negative margin causes the image to compress along the vertical axis when the viewport is resized and using just translate causes the image to compress along the horizontal axis when the viewport is resized. By using both techniques together, the image maintains its proper aspect ratio no matter how the viewport is resized.
         }
@@ -133,18 +137,12 @@ header {
     .contentContainer {
         @include flexFullCentre();
         flex-basis: 50%;
-
-        img {
-            order: 1;
-            width: 50%;
-            height: 25%;
-            transform: translate(-70%, -25%);
-        }
-
+        
         h1 {
             order: 0;
             font-size: 15rem;
             position: relative;
+            animation: headerH1Anim 2s ease 0s 1;
 
             // Using an after element to add the "Everyday Life with" image to the h1
             // I chose this method for two reasons:
@@ -161,6 +159,7 @@ header {
                 top: -25%;
                 left: 75%;
                 z-index: 1;
+                animation: headerH1AfterAnim 3s ease 0s 1;
             }
 
             @include mq-desktop-small() {
