@@ -11,13 +11,10 @@ header {
 
     nav {
         background-color: $colourPrimaryLight;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexFullCentre();
         ul {
             margin: 1%;
-            display: flex;
-            justify-content: space-between;
+            @include flexBetween();
             align-items: center;
 
             @include mq-tablet() {
@@ -78,9 +75,7 @@ header {
     }
 
     .wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexFullCentre();
         height: 100%;
 
         @include mq-desktop-small() {
@@ -91,8 +86,7 @@ header {
 
 .headerContent {
 
-    display: flex;
-    justify-content: space-between;
+    @include flexBetween();
 
     @include mq-desktop-small() {
         flex-direction: column;
@@ -137,9 +131,7 @@ header {
     }
 
     .contentContainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexFullCentre();
         flex-basis: 50%;
 
         img {
@@ -169,7 +161,6 @@ header {
                 top: -25%;
                 left: 75%;
                 z-index: 1;
-
             }
 
             @include mq-desktop-small() {

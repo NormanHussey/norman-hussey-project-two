@@ -13,8 +13,7 @@ header.contactHeader {
 
     .wrapper {
         padding: 5% 0;
-        display: flex;
-        justify-content: space-between;
+        @include flexBetween();
         align-items: flex-start;
 
         @include mq-tablet() {

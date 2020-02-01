@@ -7,8 +7,7 @@ header.blogHeader {
 
     .wrapper {
         padding: 7.5% 0 5% 0;
-        display: flex;
-        justify-content: space-between;
+        @include flexBetween();
 
         @include mq-desktop-small() {
             flex-direction: column;
@@ -39,8 +38,7 @@ header.blogHeader {
 
         @include mq-desktop-small() {
             order: 1;
-            display: flex;
-            justify-content: space-between;
+            @include flexBetween();
             align-items: flex-start;
         }
 
@@ -140,15 +138,13 @@ header.blogHeader {
 }
 
 .comments {
-    display: flex;
+    @include flexBetween();
     flex-direction: column;
-    justify-content: space-between;
 
     .comment {
         padding: 5%;
         background-color: white;
-        display: flex;
-        justify-content: space-between;
+        @include flexBetween();
 
         @include mq-tablet() {
             display: block;

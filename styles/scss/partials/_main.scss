@@ -62,8 +62,7 @@ h5 {
 
         li {
             flex-basis: 50%;
-            display: flex;
-            justify-content: space-between;
+            @include flexBetween();
 
             a {
                 margin: 0 20px;
@@ -97,8 +96,7 @@ h5 {
 
     .card {
         width: 100%;
-        display: flex;
-        justify-content: space-between;
+        @include flexBetween();
 
         @include mq-desktop-small() {
             flex-direction: column;
@@ -197,8 +195,7 @@ h5 {
 
     .card {
         padding: 10% 0 7.5% 0;
-        display: flex;
-        justify-content: space-between;
+        @include flexBetween();
 
         @include mq-desktop-small() {
             flex-direction: column;
@@ -242,8 +239,7 @@ h5 {
 
     ul {
         padding: 7.5% 0;
-        display: flex;
-        justify-content: space-between;
+        @include flexBetween();
 
         @include mq-tablet() {
             flex-direction: column;

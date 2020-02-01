@@ -63,9 +63,8 @@ button {
 }
 
 form {
-    display: flex;
+    @include flexBetween();
     flex-wrap: wrap;
-    justify-content: space-between;
     > * {
         border: none;
         &:not(button) {
