@@ -67,7 +67,7 @@ button {
     width: 80%;
     margin: 0 auto;
 
-    @include mq-desktop-small() {
+    @include mq-tablet-large() {
         width: 90%;
     }
 
@@ -92,10 +92,12 @@ form {
 
     input {
         color: $colourBlack;
-        flex-basis: 49%;
+        // flex-basis: 49%;
+        width: 49%;
 
         @include mq-tablet-small() {
-            flex-basis: 100%;
+            // flex-basis: 100%;
+            width: 100%;
         }
     }
 

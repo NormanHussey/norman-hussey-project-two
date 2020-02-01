@@ -343,7 +343,7 @@ button:hover, button:focus {
   margin: 0 auto;
 }
 
-@media (max-width: 1170px) {
+@media (max-width: 1048px) {
   .wrapper {
     width: 90%;
   }
@@ -388,14 +388,12 @@ form *::placeholder {
 
 form input {
   color: #171717;
-  -ms-flex-preferred-size: 49%;
-      flex-basis: 49%;
+  width: 49%;
 }
 
 @media (max-width: 768px) {
   form input {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    width: 100%;
   }
 }
 
@@ -1494,7 +1492,6 @@ header.contactHeader h1 {
 
 @media (max-width: 1048px) {
   .contactForm form input {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    width: 100%;
   }
 }
