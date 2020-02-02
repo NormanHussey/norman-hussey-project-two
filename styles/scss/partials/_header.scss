@@ -16,7 +16,7 @@ header {
             @include flexBetween();
             align-items: center;
 
-            animation: headerNavAnim 1s ease 0s 1;
+            animation: slideInFromTopAnim 1s ease 0s 1;
 
             @include mq-tablet() {
                 animation: none;
@@ -142,7 +142,7 @@ header {
             order: 0;
             font-size: 15rem;
             position: relative;
-            animation: headerH1Anim 2s ease 0s 1;
+            animation: slideInFromRightAnim 2s ease 0s 1;
 
             // Using an after element to add the "Everyday Life with" image to the h1
             // I chose this method for two reasons:

@@ -31,7 +31,6 @@ h5 {
         flex-basis: 50%;
         display: flex;
         flex-direction: column;
-
         @include mq-desktop-small() {
             text-align: center;
             flex-basis: auto;

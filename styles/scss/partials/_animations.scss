@@ -1,3 +1,5 @@
+// Header Animations
+
 @keyframes headerImgContainerAnim {
     0% {
         transform: translate(0, 200%);
@@ -19,16 +21,6 @@
     }
 }
 
-@keyframes headerH1Anim {
-    0% {
-        transform: translate(200%, 0);
-    }
-
-    100% {
-        transform: translate(0, 0);
-    }
-}
-
 @keyframes headerH1AfterAnim {
     0%,
     50% {
@@ -42,12 +34,47 @@
     }
 }
 
-@keyframes headerNavAnim {
+
+// Slide in animations
+
+@keyframes slideInFromTopAnim {
     0% {
         transform: translate(0, -200%);
     }
 
     100% {
         transform: translate(0, 0);
+    }
+}
+
+@keyframes slideInFromLeftAnim {
+    0% {
+        transform: translate(-200%, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes slideInFromRightAnim {
+    0% {
+        transform: translate(200%, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+// Fade in animation
+
+@keyframes fadeInAnim {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
     }
 }
