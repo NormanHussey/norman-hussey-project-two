@@ -171,7 +171,6 @@ header.blogHeader {
 
         .contentContainer {
             flex-basis: 85%;
-
             @include mq-tablet() {
                 font-size: 1.75rem;
             }
